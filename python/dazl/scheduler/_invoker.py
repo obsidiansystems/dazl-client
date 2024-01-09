@@ -95,7 +95,7 @@ class Invoker:
         if self.executor is None:
             self.executor = ThreadPoolExecutor()
 
-    def run_in_loop(self, func, timeout: TimeDeltaLike = 30.0):
+    def run_in_loop(self, func, timeout: TimeDeltaLike = 3000.0):
         """
         Schedule a normal function or coroutine function to be run on the event loop, and block
         until the function has returned.
